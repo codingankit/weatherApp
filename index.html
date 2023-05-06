@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./scripts/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="./scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="searchDiv">
+        <input type="search" id="searchBox" placeholder="Search By City" />
+        <button id="searchBtn">
+          <span class="material-icons">search</span>
+        </button>
+      </div>
+
+      <div id="mainContent" style="">
+        <h2 id="cityName"></h2>
+        <h3 id="cityTemp"></h3>
+        <div id="weatherDescriptionDiv">
+          <p>
+            <i class="wi" id="weatherIcon"></i>
+            <span id="weatherDescription"></span>
+          </p>
+        </div>
+        <div id="sideInfoDiv">
+          <h5>
+            <span class="hu">Humidity</span> :
+            <span id="humidity" class="hu"></span>
+          </h5>
+          <h5>
+            <span class="ws">Wind Speed</span> :
+            <span id="windSpeed" class="ws"></span>
+          </h5>
+        </div>
+      </div>
+
+      <div id="initialTextDiv" style="">
+        <h3 id="initialText">Weather App</h3>
+        <h1 id="initialTextDesign">...</h1>
+      </div>
+
+      <div id="errDiv" style="">
+        <h3 id="errText"></h3>
+      </div>
+    </div>
+  </body>
+</html>

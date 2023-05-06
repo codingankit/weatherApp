@@ -1,0 +1,110 @@
+@import "https://fonts.googleapis.com/css2?family=Dosis&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+body {
+  background: #2e3131;
+}
+#wrapper {
+  color: #fff;
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+#searchBox {
+  width: 85%;
+  padding: 12px 15px;
+  border-radius: 55px;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+#searchBox:focus {
+  outline: none;
+}
+#searchBtn {
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 5px;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  vertical-align: middle;
+  color: #fff;
+}
+#searchBtn:focus {
+  outline: none;
+}
+span {
+  color: #fff
+  margin: 4.2px;
+}
+#weatherIcon {
+  font-size: 28px;
+}
+#cityName {
+  margin: 20px 0px 0px 10px;
+  color: #00a6a6;
+}
+#cityTemp {
+  margin: 15px 0px 0px 17px;
+  color: #fc9e4f;
+}
+#weatherDescriptionDiv {
+  margin: 15px 0px 0px 17px;
+}
+#weatherDescription {
+  margin-left: 14px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: dodgerblue;
+}
+#weatherIcon{
+  display: inline;
+  color: #cb48b7;
+}
+#sideInfoDiv {
+  margin: 26px 0px 0px 17px;
+}
+.hu {
+  color: #7cc6fe;
+}
+.ws {
+  color: #8377d1;
+}
+#initialText {
+  text-align: center;
+  color: #28afb0;
+}
+#initialTextDesign {
+  text-align: center;
+  color: #28afb0;
+  letter-spacing: 8px;
+}
+#initialTextDiv,
+#errDiv {
+  margin: 30px 0px 15px 0px;
+}
+#errText {
+  text-align: center;
+  color: #d2527f;
+}
+#sideInfoDiv > h5{
+  margin-bottom: 4px;
+}
+#searchBox::-webkit-search-decoration,
+#searchBox::-webkit-search-cancel-button,
+#searchBox::-webkit-search-results-button,
+#searchBox::-webkit-search-results-decoration { display: none; }
